@@ -14,7 +14,7 @@ public class HomeController {
     }
 
     // this method will respond to http://localhost:8080/
-    @GetMapping("/eric")
+    @GetMapping("/simba")
     public String simba() {
         return "this is movie magic!";
     }
