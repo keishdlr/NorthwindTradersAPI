@@ -9,10 +9,9 @@ public class HomeController {
 
     // this method will respond to http://localhost:8080/
     @GetMapping("/")
-    public String homePage(@RequestParam(defaultValue="World") String name, @RequestParam(defaultValue="Red") String favcolor) {
-        return "hello " + name +"! and your favorite color is " + favcolor;
+    public String helloWorld(@RequestParam(defaultValue = "World") String country){
+        return "Hello "+ country;
     }
-
 
     // this method will respond to http://localhost:8080/
     @GetMapping("/eric")
