@@ -13,17 +13,4 @@ public class HomeController {
         return "Hello "+ country;
     }
 
-    // this method will respond to http://localhost:8080/
-    @GetMapping("/simba")
-    public String simba() {
-        return "this is movie magic!";
-    }
-
-    // this method will respond to http://localhost:8080/
-    @GetMapping("/AJ")
-    public String AJ() {
-        return "this is fake magic!";
-    }
-
-
 }
