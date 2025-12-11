@@ -46,4 +46,8 @@ public class Product {
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
+
+    public void add(Product products) {
+
+    }
 }

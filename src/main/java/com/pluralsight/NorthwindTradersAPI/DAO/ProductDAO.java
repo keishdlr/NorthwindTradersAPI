@@ -6,7 +6,11 @@ import java.util.List;
 
 public interface ProductDAO {
 
-        public static List<Product> getAll() {
+    // This method will add a new Film to the database.
+    // It is required because we are implementing the FilmDao interface.
+    Product add(Product product);
+
+    public static List<Product> getAll() {
 
 
             return List.of();
