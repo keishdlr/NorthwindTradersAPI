@@ -4,8 +4,15 @@ import com.pluralsight.NorthwindTradersAPI.models.Product;
 
 import java.util.List;
 
-public class ProductDAO {
+public interface ProductDAO {
 
-    public static List<Product> getAll() {
-    }
+        public static List<Product> getAll() {
+
+
+            return List.of();
+        }
+
+        public static void add(Product product) {
+        }
+
 }

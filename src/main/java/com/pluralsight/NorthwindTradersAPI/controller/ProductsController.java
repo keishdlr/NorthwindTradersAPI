@@ -2,9 +2,8 @@ package com.pluralsight.NorthwindTradersAPI.controller;
 
 import com.pluralsight.NorthwindTradersAPI.DAO.ProductDAO;
 import com.pluralsight.NorthwindTradersAPI.models.Product;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,6 +15,14 @@ public class ProductsController {
     public List<Product> getAllProducts(){
 
         return ProductDAO.getAll();
+    }
+
+    @PostMapping("/api/films")
+    @ResponseStatus(value = HttpStatus.CREATED)
+    public Product addFProduct(@RequestBody Product product){
+
+        return ProductDAO.add(product);
+
     }
 
 }
